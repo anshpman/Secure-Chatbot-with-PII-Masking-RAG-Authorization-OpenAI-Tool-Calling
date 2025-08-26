@@ -9,7 +9,7 @@ The application is built as a Jupyter Notebook for clear, cell-by-cell execution
 
 The chatbot operates on a modular, secure-by-design architecture. The core principle is that our local Python code remains in control of the state and logic, while leveraging external AI services as specialized tools.
 
-![System Design Diagram](https://i.imgur.com/your-diagram-image-link.png)
+![Alt Text](https://github.com/anshpman/Secure-Chatbot-with-PII-Masking-RAG-Authorization-OpenAI-Tool-Calling/blob/9f5f3437366147ce95e9e8e7565d3322d20a5755/System%20Design.png)
 
 The data flow is executed in a specific order to maximize security and efficiency:
 1.  **PII Masking & Extraction:** User input is immediately processed by a PII module using Microsoft Presidio to find and mask sensitive data. The real, unmasked data is stored in a secure local dictionary.
